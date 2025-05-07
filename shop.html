@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Магазин Кино</title>
+  <link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+  <header>
+    <nav class="head_nav">
+        <div class="logp">
+          <img src="img/white.black.jpg" alt="Logo">
+        </div>
+        <div class="ner">
+          <a href="index.html">HOME</a>
+          <a href="shop.html">SHOP</a>
+          <a href="seach.html">SEARCH</a>
+        </div>
+      </nav>
+  </header>
+
+  <h1>Магазин Кино</h1>
+
+  <main>
+    <section id="movieList" class="movie-list">
+      <!-- Здесь будут отображаться фильмы -->
+    </section>
+
+    <section id="cartContainer" class="cart-container">
+      <h2>🛒 Корзина</h2>
+      <ul id="cartItems"></ul>
+      <p id="cartTotal">Итого: 0$</p>
+      <button id="checkoutBtn">Оформить заказ</button>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <iframe id="trailerFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="shop.js" defer></script>
+</body>
+</html>

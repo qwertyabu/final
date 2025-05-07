@@ -1,0 +1,194 @@
+body {
+    background-color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  .head_nav{
+    box-shadow: 1px 0.5px 30px gray;
+    background-color: #000;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    gap: 400px;
+  }
+  .logp img{
+    width: 150px;
+    height: 150px;
+  }
+  .ner{
+    color: white;
+    display: flex;  
+    gap: 50px;
+  }
+  .ner a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  .ner a:hover{
+    color: red;
+    transition: 0.5s;}
+  
+  .video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .video-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 150px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #111);
+    height: 100vh;
+    color: white;
+  }
+  
+  .video-content h1 {
+    font-size: 3em;
+  }
+  
+  .video-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #ff4444;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .movie-card {
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .search-section {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .search-section input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-section button {
+    padding: 10px 20px;
+    background: #ff4444;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal.active {
+    display: flex;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: #000;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .modal-content iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .sort-section {
+    text-align: center;
+    margin: 20px;
+    color: white;
+  }
+  
+  .sort-section select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+  }
+  h1{
+    color: white;
+  }
+
+  
+  
+  
+  

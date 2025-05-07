@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vionix</title>
+  <link rel="stylesheet" href="seach.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="head_nav">
+      <div class="logp"><img src="img/white.black.jpg" alt="logo" /></div>
+      <div class="ner">
+        <a href="index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="seach.html">SEARCH</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="search-section">
+      <input type="text" id="searchInput" placeholder="Введите название фильма..." />
+      <button onclick="searchMovies()">Найти</button>
+    </div>
+
+    <div class="sort-section">
+        <label for="sortSelect">Сортировать по:</label>
+        <select id="sortSelect" onchange="sortMovies()">
+          <option value="popularity.desc">Популярности</option>
+          <option value="vote_average.desc">Рейтингу</option>
+          <option value="release_date.asc">Году (старые)</option>
+        </select>
+      </div>
+      
+
+    <h1>Новинки</h1>
+    <div class="movies" id="movieList"></div>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="close-btn" onclick="closeModal()">×</div>
+        <iframe id="trailerFrame" src="" allowfullscreen></iframe>
+      </div>
+    </div>
+  </main>
+
+  <script src="seach.js"></script>
+</body>
+</html>

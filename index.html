@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vionix - Karate Kid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="splash">
+    <div class="rays"></div>
+    <div class="logo">Vionix</div>
+  </div>
+
+  <header>
+    <nav class="head_nav">
+      <div class="logp">
+        <img src="img/white.black.jpg" alt="Logo">
+      </div>
+      <div class="ner">
+        <a href="index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="seach.html">SEARCH</a>
+        <button id="themeToggle">COLOR MODE</button>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="video-background">
+    <iframe src="https://www.youtube.com/embed/LhRXf-yEQqA?autoplay=1&mute=1&controls=0&loop=1&playlist=LhRXf-yEQqA"
+      frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+    <div class="video-content">
+      <h1>KARATE KID: LEGENDS</h1>
+      <p>Новая глава культовой истории боевых искусств.<br>Готовься к легенде!</p>
+      <button class="btn" onclick="openModal('uPzOyzsnmio')">Смотреть трейлер</button>
+    </div>
+  </div>
+
+  <main>
+    <h1>Популярные фильмы</h1>
+    <div class="movies" id="movieList"></div>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="close-btn" onclick="closeModal()">×</div>
+      <iframe id="trailerFrame" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
